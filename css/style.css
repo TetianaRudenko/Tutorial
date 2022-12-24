@@ -184,7 +184,7 @@ body.menu-container {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-    /* identical to box height */
+    
 
     text-align: center;
     letter-spacing: 0.04em;
@@ -193,6 +193,8 @@ body.menu-container {
     color: #131313;
 }
 
+
+/* input field*/
 .group-wrap {
     display: flex;
     flex-direction: column;
@@ -282,20 +284,20 @@ body.menu-container {
     border-bottom-left-radius: 15px;
 } */
 
-.checkbox__agree {
+/* .checkbox__agree {
     font-family: 'Montserrat';
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-    /* identical to box height */
+   
 
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #131313;
-}
+} */
 
 /* .checkbox__checked:checked+.checkbox__agree {
     background-color: #2196F3;
@@ -392,8 +394,9 @@ body.menu-container {
     border-left: 2px solid #96AF8C;    
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
     
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    
     
 }
 
@@ -406,14 +409,15 @@ body.menu-container {
     width: 132px;
     height: 132px;
     border-radius: 98px;
-    background-color: #fff;
+    background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+        #D9D9D9;
     
-    box-shadow: 0 5px 19px rgb(212 20 67 / 10%);
-    background-image: url(../img/img1.png);
+    box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
+    background-image: url(../img/img1.png), url(../img/Ellipse.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1))
+    background-position: top -10px left 0, top 20px left 0;
+    background-size: cover, cover;
+    
 
 }
 
