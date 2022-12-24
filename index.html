@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>try</title>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <h1>Привіт</h1>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="close-btn" aria-label="close-btn">
+                <svg class="close-btn__icon" width="11" height="11">
+                    <use href="./img/symbol-defs.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <form class="modal__form" autocomplete="on">
+                <h2 class="modal__caption">Buy now</h2>
+                <ul class="ul">
+                    <li class="checkbox-list">
+                        <input class="checkbox__checked vissually-hidden" type="checkbox" name="checkbox-choose"
+                            value="choose" id="ice-cream">
+                        <label class="checkbox__agree" for="ice-cream" placeholder="ice-cream">ice cream</label>
+                    </li>
+    
+                    <li>
+                        <div>
+                            <img src="" alt="" width="132">
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input class="checkbox__checked vissually-hidden" type="checkbox" name="checkbox-choose"
+                                value="choose" id="ice-coffee">
+                            <label class="checkbox__agree" for="ice-coffee">ice coffee</label>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div>
+                            <img src="" alt="" width="132">
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input class="checkbox__checked vissually-hidden" type="checkbox" name="checkbox-choose"
+                                value="choose" id="milkshake">
+                            <label class="checkbox__agree" for="milkshake">milkshake</label>
+                        </div>
+                    </li>
+                </ul>
+    
+                <div role="group" class="group-wrap">
+                    <div class="form-field">
+                        <input class="form-field__input" type="text" name="name" placeholder="Name" autocomplete="off"
+                            required>
+                    </div>
+    
+                    <div class="form-field">
+                        <input class="form-field__input" type="tel" name="user-tel" placeholder="Phone" required>
+                    </div>
+    
+                    <div class="form-field form-field--textarea">
+                        <textarea class="form-field__textarea" name="comment" placeholder="Comment"></textarea>
+                    </div>
+    
+                    <button class="btn btn--submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
