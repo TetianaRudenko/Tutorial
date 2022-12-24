@@ -50,16 +50,19 @@
     
                 <div role="group" class="group-wrap">
                     <div class="form-field">
-                        <input class="form-field__input" type="text" name="name" placeholder="Name" autocomplete="off"
-                            required>
+                        <input class="form-field__input" type="text" name="name" minlength="3" required autocomplete="off" >
+                          
+                        <span class="form-field__wrap">Name</span>
                     </div>
     
                     <div class="form-field">
-                        <input class="form-field__input" type="tel" name="user-tel" placeholder="Phone" required>
+                        <input class="form-field__input" type="tel" name="user-tel" title="+38-___-___-__-__" pattern="^\+?[0-9]{2}-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" required>
+                        <span class="form-field__wrap">Phone</span>
                     </div>
     
                     <div class="form-field form-field--textarea">
-                        <textarea class="form-field__textarea" name="comment" placeholder="Comment"></textarea>
+                        <textarea class="form-field__textarea" name="comment" ></textarea>
+                        <span class="form-field__wrap">Comment</span>
                     </div>
     
                     <button class="btn btn--submit" type="submit">Submit</button>
