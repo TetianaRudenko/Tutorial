@@ -1,0 +1,92 @@
+.products {
+    padding-left: 74px;
+    padding-right: 74px;
+}
+
+.products__list {
+    position: relative;
+
+    margin-bottom: 20px;
+
+    width: 132px;
+    height: 199px;
+    font-size: 12px;
+    line-height: 1.17;
+}
+
+
+
+
+.products__choose {
+    font-family: 'Montserrat';
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #131313;
+}
+
+
+.products__checkbox {
+    /* position: relative; */
+    opacity: 0;
+
+}
+
+.products__checkbox+.products__choose {
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer;
+
+}
+
+.products__checkbox+.products__choose:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    width: 132px;
+    height: 136px;
+    border-right: 2px solid #96AF8C;
+    border-bottom: 2px solid #96AF8C;
+    border-left: 2px solid #96AF8C;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
+
+
+
+}
+
+.products__checkbox+.products__choose:after {
+    content: " ";
+    position: absolute;
+    top: -62px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    width: 132px;
+    height: 132px;
+    border-radius: 98px;
+    background-color: rgb(10 136 23 / 25%);
+    box-shadow: 0px 5px 20px rgb(10 136 23 / 25%);
+    background-image: url(../img/img1.png);
+    background-repeat: no-repeat;
+    background-position: top -10px left 0;
+    background-size: cover;
+}
+
+.checkbox__checked:checked+.products__choose:after {
+    left: 0;
+}
+
+#ice-cream:checked+.products__choose:before {
+    background-color: #96AF8C;
+}
